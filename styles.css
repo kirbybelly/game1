@@ -1,0 +1,71 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Pretendard', 'Noto Sans KR', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #131722;
+  color: #f6f7fb;
+}
+
+.layout {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, p {
+  margin: 0 0 10px;
+}
+
+.hud {
+  margin: 14px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.hud > div {
+  background: #1c2233;
+  border: 1px solid #2f3851;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 700;
+}
+
+#gameCanvas {
+  width: 100%;
+  border: 2px solid #2f3851;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #8cd0ff 0%, #8cd0ff 55%, #719f52 55%, #608a45 100%);
+}
+
+.controls {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #41507c;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover { background: #56679d; }
+button:disabled { background: #29304a; cursor: not-allowed; }
+
+.guide {
+  margin-top: 16px;
+  background: #1c2233;
+  border: 1px solid #2f3851;
+  border-radius: 8px;
+  padding: 12px;
+}

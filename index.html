@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>냥코 스타일 횡스크롤 타워디펜스 프로토타입</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <header>
+      <h1>냥코 스타일 횡스크롤 타워디펜스 (프로토타입)</h1>
+      <p>고양이 유닛을 소환해 적 기지를 먼저 파괴하세요.</p>
+    </header>
+
+    <section class="hud">
+      <div>골드: <span id="gold">0</span></div>
+      <div>아군 기지 HP: <span id="allyBaseHp">0</span></div>
+      <div>적 기지 HP: <span id="enemyBaseHp">0</span></div>
+      <div>Wave: <span id="wave">1</span></div>
+    </section>
+
+    <canvas id="gameCanvas" width="1200" height="420" aria-label="게임 화면"></canvas>
+
+    <section class="controls">
+      <button data-unit="basic">기본 냥이 (50G)</button>
+      <button data-unit="tank">탱커 냥이 (90G)</button>
+      <button data-unit="fast">질주 냥이 (70G)</button>
+      <button id="pauseBtn">일시정지</button>
+      <button id="restartBtn">재시작</button>
+    </section>
+
+    <section class="guide">
+      <h2>조작 방법</h2>
+      <ul>
+        <li>아래 버튼으로 유닛을 소환합니다.</li>
+        <li>골드는 시간이 지날수록 자동으로 획득됩니다.</li>
+        <li>유닛은 자동 전진/공격합니다.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
